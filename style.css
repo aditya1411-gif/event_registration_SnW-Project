@@ -1,4 +1,5 @@
-/* MAIN BACKGROUND */
+
+
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +8,9 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; 
+  background-size: cover;    
+   
 }
 
 .main-container {
@@ -18,7 +21,7 @@ body {
   align-items: center;
 }
 
-/* LEFT SIDE INFO PANEL */
+
 .info-panel {
   width: 45%;
   color: rgb(0, 0, 0);
@@ -146,4 +149,16 @@ button:hover {
 
 .heading{
     font-weight: bold;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("https://d8it4huxumps7.cloudfront.net/uploads/images/150x150/uploadedManual-67b19ebf004ed_3.png?d=200x200");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  opacity: 0.12;                
+  z-index: -1;                  
 }
